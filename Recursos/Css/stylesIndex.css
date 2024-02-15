@@ -10,7 +10,7 @@ nav{
 
 h2{
     margin: 0 0 0 20px;
-    font-size: 80px;
+    font-size: 140px;
     display: inline;
     transition: all 0.3s ease ;
 }
@@ -27,6 +27,16 @@ a{
 }
 
 
+#presentacion{
+    right: 20px;
+    bottom: 5px;
+    position: fixed;
+    width: 300px;
+}
+
+#presentacion>h3{
+    font-size: 25px;
+}
 
 
 
