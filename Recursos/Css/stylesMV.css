@@ -1,0 +1,87 @@
+
+
+header{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+header>svg{
+    margin-left: 30px;
+    transform: rotate(180deg) scale(1.4);
+    transition: 0.2s ease;
+}
+
+header>svg:hover{
+
+    transform: rotate(0deg) scale(1.2);
+}
+
+#titulo{
+    
+    font-size: 40px;
+    border-bottom: 4px solid var(--beigeA);
+    display: inline;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.selectMV > h2{
+    margin: 10px 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    gap: 100px;
+}
+
+.selectMV {
+    border-radius: 15px;
+    width: 350px;
+    border: 5px solid var(--beigeA);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    transition: all 0.4s linear;
+}
+
+.selectMV:hover{
+
+    transform: scale(1.2);
+}
+
+
+img{
+    width: 200px;
+    padding: 20px 0;
+}
+
+
+#VE{
+    background-color: rgba(0, 0, 0, 0.269);
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#cuerpo{
+    background-color: var(--beige);
+    width: 500px;
+    height: 500px;
+    overflow-y: scroll;
+    
+    
+}
