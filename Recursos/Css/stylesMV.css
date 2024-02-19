@@ -7,13 +7,15 @@ header{
     justify-content: left;
 }
 
-header>svg{
+#headerP>svg{
     margin-left: 30px;
     transform: rotate(180deg) scale(1.4);
     transition: 0.2s ease;
+    cursor: pointer;
+
 }
 
-header>svg:hover{
+#headerP>svg:hover{
 
     transform: rotate(0deg) scale(1.2);
 }
@@ -71,7 +73,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -79,9 +81,42 @@ img{
 
 #cuerpo{
     background-color: var(--beige);
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 550px;
+    border-radius: 15px;
+    padding: 0 20px 5px;
+
     overflow-y: scroll;
-    
-    
+    scrollbar-width: thin;         
+    scrollbar-color: var(--negro) var(--beige);
 }
+
+
+
+#headerVE > h2{
+    font-size: 30px;
+}
+
+#headerVE > svg{
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+#headerVE > svg:hover{
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
