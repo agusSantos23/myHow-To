@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+
+
 :root{
     --negro: #454545;
     --beige: #FCF5ED;
     --beigeA: #F4BF96;
+}
+
+body{
+    overflow-y: scroll;
+
+    scrollbar-width: thin;         
+    scrollbar-color: var(--negro) var(--beige);
 }
 
 nav{
