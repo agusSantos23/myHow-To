@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../Recursos/Css/stylesMV.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agregacion de ISOS VB</title>
 </head>
 <body>
     <header id="headerP">
@@ -14,7 +14,7 @@
         <svg onclick="history.go(-1)" fill="#454545" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M20.697 24L9.303 16.003 20.697 8z"/></svg>
 
 
-        <h1 id="titulo">Agregacion de Maquinas Virtuales</h1>
+        <h1 id="titulo">Agregacion de ISOS a Virtual Box</h1>
     </header>
     <main>
 
@@ -69,16 +69,102 @@
                 <section>
                     <p>
                         Seguidamente se nos abrira una nueva seccion en la que nos aparecera dos tipos de descarga, el primero 
-                        nos descarga Windos ISO a 32 bits y el segundo a 64 bits, es muy importante saber cual de los dos es 
+                        nos descarga Windows ISO a 32 bits y el segundo a 64 bits, es muy importante saber cual de los dos es 
                         mejor para la makina que vallamos a montar, en nuestro clicaremos sobre el de 64 bits, automaticamente 
                         se empezara a descargar en tu ordenador.
                     </p>
-                    <img src="../Recursos/img/MV/Windows/Descargar64o32.png" alt="">
+                    <img src="../Recursos/img/MV/Windows/Descargar64o32.png" alt="Descargar adaptado a nuestro sistema">
                 </section>
             </article>
 
             <article>
                 <h3>2. Crear una Nueva Maquina Virtual</h3>
+
+                <section>
+                    <p>
+                        Presionamos en nuestro teclado la tecla de windows o clicamos en la lupa de la barra de tareas para 
+                        buscar Virtual Box y asi abrirlo. Una vez abierto nos mostrara la siguiente ventana, nos mostrara diferentes 
+                        zonas acciones que podemos hacer (Preferencias, Importar, Exportar, Nueva y Añadir), nosotros selecionaremos 
+                        la opcion Nueva haciendo clic sobre la estrella azul.
+
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/AbrirVB.png" alt="Abrir Virtual Box">
+                </section>
+
+                <section>
+                    <p>
+                        Senos abrirá una nueva pestaña, en la que nos muestra diferentes configuraciones que le podemos hacer a la 
+                        máquina virtual. De todos los apartados solo nos interesan dos, primero el nombre: que le vamos a asignar en 
+                        nuestro caso, asignaremos algo reconocible con Windows para saber de qué ISO se trata y el segundo apartado 
+                        Imagen ISO: este apartado seleccionaremos Otro para abrir los archivos del equipo, debemos navegar hasta donde
+                        tengamos la ISO, en nuestro caso la hemos descargado anteriormente así que se encuentre en la carpeta de descargas.
+                        Una vez que hallamos terminados estos dos apartados, clicamos en el botón de la parte inferior derecha llamado Siguiente.
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/NombreMV.png" alt="Nombrar y selecionar la ISO">
+                </section>
+
+                <section>
+                    <p>
+                        En esta tercera ventana pedira un nombre de usuario y una contraseña para este usuario a modo de ejemplo le mostrare la configuracion 
+                        que yo utilizare pero usted puede utilizar la que prefiera. A la derecha de estos dos apartados nos da la opcion de activar mediante
+                        la clave de windows, nosotros le pondremos una clave generica que yo le proporciono:TX9XD-98N7V-6WMQ6-BX7FG-H8Q99. Despues de esto 
+                        solo tendremos que clicar sobre el boton de Siguiente nuevamente abajo a la derecha.
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/ContraMV.png" alt="Seguridad de la Maquina Virtual">
+                </section>
+
+                <section>
+                    <p>
+                        En esta tercera ventana nos mostrara el rendimiento que le querramos poner a la maquina virtual partiendo de los componentes
+                        de tu ordenador. Como vamos a hacer pocas acciones en la maquina virtual lo dejamos como predeterminado pero tu puedes 
+                        configurarlo como prefieras y clicamos de nuevo en Siguiente.
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/RendimientoMV.png" alt="Configuracion de rendimiento de la Maquina Virtual">
+                </section>
+
+                <section>
+                    <p>
+                        Este partado es parecido al anterior solo que tratamos en este caso con el almacenamiento que le vamos a asignar como antes
+                        vamos a dejarlo predeterminado o puedes configurarlo a tu nescesidades. Clicaremos nuevamente en Siguiente.
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/AlmacenamientoMV.png" alt="Configuracion de almacenamiento de la Maquina Virtual">
+                </section>
+
+                <section>
+                    <p>
+                        En la ultima fase nos mostrara un resumen de todas las desiciones que hemos tomando en la configuracion de la maquina virtual.
+                        Comprobamos de que todos los datos estan correctos y si es asi clicaremos sobre el boton terminar.Seguidamente se cerrara la ventana
+                        en la que nos encontrabamos para automaticamente arracar la marquina virtual que acabamos de configurar, no tocamos nada.
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/ConfiguracionMV.png" alt="Resumen de configuracion de la Maquina Virtual">
+                </section>
+
+                <section>
+                    <p>
+                        Sin tocar nada en el ordenador se empezara a intalar el sistema operativo de windows en la maquina virtual este proceso tardara algun tiempo
+                        en mientras esperamos pacientemente a hasta que termine.
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/IniciodeIntalacionW.png" alt="Inicio de Intalacion de Windows">
+                </section>
+
+                <section>
+                    <p>
+                        Una vez que veamos el escrito de Windows podremos interactuar con nuestro nuevo sistema. Por el momento lo cerraremos y 
+                        selecionaremos la opcion de Apagar la Maquina.
+                    </p>
+                    <img src="../Recursos/img/MV/Windows/VB/WindowsOperativo.png" alt="Windows instalado en la Maquina Virtual">
+                </section>
+
+                <section>
+                    <p>
+                        Felizidades, Has finalizado con este tutorial puedes continuar con La configuracion de la maquina Virtual con Linux.
+                    </p>
+                </section>
+
+
+
+
+
             </article>
 
         </div>
