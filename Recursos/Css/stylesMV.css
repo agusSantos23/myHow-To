@@ -21,7 +21,7 @@ header{
     transform: rotate(0deg) scale(1.2);
 }
 
-#titulo{
+h1{
     
     font-size: 40px;
     border-bottom: 4px solid var(--beigeA);
