@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="../Recursos/Css/styles.css">
     <link rel="stylesheet" href="../Recursos/Css/header.css">
+    <link rel="stylesheet" href="../Recursos/Css/stylesC.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,5 +16,117 @@
 
         <h1 id="titulo">Linux</h1>
     </header>
+    <main>
+
+
+
+        <article>
+            <h2>Arranque de la Maquina Virtual de Linux</h2>
+
+            <p>
+                Abriremos Virtual Box y arracaremos la maquina virtual de Linux anteriormente creada, dandole doble clic.
+            </p>
+
+            <img src="../Recursos/img/Linux/ArrancarMVLinux.png" alt="Arracar la Maquina Virtual de Linux">
+
+        </article>
+
+        <article>
+            <h2>Inicio de sesion, Linux</h2>
+
+            <p>
+                Iniciaremos sesion con las credenciadas que asociamos anteriormente. 
+            </p>
+
+            <img src="../Recursos/img/Linux/InicioLinux.png" alt="Inicion de sesion, Linux">
+
+        </article>
+
+        <article>
+            <h2>Ubuntu Software</h2>
+
+            <p>
+                Una vez dentro encontraremos una serie de programas en la barra lateral, clicaremos sobre la bolsa naraja 
+                llamado Ubuntu Software. Una vez abierto clicaremos arriba a la derecha, sobre el apartado Updates.Clicaremos 
+                sobre el boton verde de Update All, para descargar las actualizaciones.
+            </p>
+
+            <img src="../Recursos/img/Linux/abrirTienda.png" alt="Abrir el Ubuntu Software">
+
+        </article>
+
+        <article>
+            <h2>Buscar Terminator</h2>
+
+            <p>
+                Tendremos un problema a la hora de abrir la terminal por defecto ya que nos encontramos en una Maquina Virtual.
+                La solucion sera buscar y descargar una nueva terminal, en nuestro caso usaremos Terminator. En el buscador pondremos 
+                su nombre y la descargaremos clicando en el boton verde install. Una vez que se haya instalado podremos cerrar la ventana 
+                de Ubuntu Software.
+            </p>
+
+            <img src="../Recursos/img/Linux/buscarTerminator.png" alt="Buscar Terminator">
+
+        </article>
+
+        <article>
+            <h2>Actualizar desde la Terminal</h2>
+
+            <p>
+                Abriremos terminator presionando la tecla de windows y buscando entre las aplicaciones instaladas, 
+                una vez abierto escribiremos los siguientes comandos.
+            </p>
+
+            <code>su //cambiamos a root, sera necesario introducir la contraseña de usuario del principio</code>
+            <code>apt upgrade //en caso de que nos pregunte siempre escribiremos s o y , pulsaremos enter</code>
+            <code>apt upgrade //volveremos a comprobar las actualizaciones por si quedara alguna por hacer</code>
+
+
+            <img src="../Recursos/img/Linux/actualizarDesdeTerminal.png" alt="Actualizar desde Terminal">
+
+        </article>
+
+        <article>
+            <h2>Instalar Samba</h2>
+
+            <p>
+                Con los siguientes comandos instalaremos samba y agregaremos un nuevo usuario llamado winuser.
+                Al crear este nuevo usuario nos pedira crear una nueva contraseña recomiendo que para evitar equivocaciones
+                utilicemos la misma que hemos usado al crear la maquina virtual de linux en nuestro caso 0123456789. Despues de
+                esto nos pedira que rellenemos diferentes campos, en mi caso no pondre nada, podeis rellenarlo como convengais. 
+            </p>
+
+            <code>apt install samba //Para instalar samba</code>
+            <code>adduser winuser//Agregar nuevo usuario</code>
+
+            <img src="../Recursos/img/Linux/instalarSamba.png" alt="Instalacion de Samba">
+
+        </article>
+
+        <article>
+            <h2>Carpeta Compartida</h2>
+
+            <p>
+                Con los siguientes comandos instalaremos samba y agregaremos un nuevo usuario llamado winuser.
+                Al crear este nuevo usuario nos pedira crear una nueva contraseña recomiendo que para evitar equivocaciones
+                utilicemos la misma que hemos usado al crear la maquina virtual de linux en nuestro caso 0123456789. 
+            </p>
+
+            <code>apt install samba //Para instalar samba</code>
+            <code>adduser winuser//Agregar nuevo usuario</code>
+
+            <img src="../Recursos/img/Linux/entramosComoWinuser.png" alt="">
+
+        </article>
+
+
+
+
+
+
+
+    </main>
+
+
 </body>
 </html>

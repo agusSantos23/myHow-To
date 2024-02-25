@@ -1,0 +1,28 @@
+main{
+    margin: 100px auto;
+    width: 1000px;
+}
+
+article{
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 22px;
+    
+}
+
+code{
+    display: block;
+}
+
+img{
+
+    width: 800px;
+    border-radius: 7px;
+    margin: 20px 100px 0;
+}
