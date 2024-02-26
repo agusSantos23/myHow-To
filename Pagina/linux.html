@@ -77,9 +77,9 @@
                 una vez abierto escribiremos los siguientes comandos.
             </p>
 
-            <code>su //cambiamos a root, sera necesario introducir la contraseña de usuario del principio</code>
-            <code>apt upgrade //en caso de que nos pregunte siempre escribiremos s o y , pulsaremos enter</code>
-            <code>apt upgrade //volveremos a comprobar las actualizaciones por si quedara alguna por hacer</code>
+            <code>su            //cambiamos a root, sera necesario introducir la contraseña </code>
+            <code>apt upgrade   //en caso de que nos pregunte siempre escribiremos s o y </code>
+            <code>apt upgrade   //volveremos a comprobar las actualizaciones</code>
 
 
             <img src="../Recursos/img/Linux/actualizarDesdeTerminal.png" alt="Actualizar desde Terminal">
@@ -107,24 +107,119 @@
             <h2>Carpeta Compartida</h2>
 
             <p>
-                Con los siguientes comandos instalaremos samba y agregaremos un nuevo usuario llamado winuser.
-                Al crear este nuevo usuario nos pedira crear una nueva contraseña recomiendo que para evitar equivocaciones
-                utilicemos la misma que hemos usado al crear la maquina virtual de linux en nuestro caso 0123456789. 
+                Nuestro siguiente objetivo sera logearnos como winuser y dentro crearemos una carpeta llamada compartida a la que 
+                le daremos todos los permisos con chmod 777.
             </p>
 
-            <code>apt install samba //Para instalar samba</code>
-            <code>adduser winuser//Agregar nuevo usuario</code>
+            <code>su winuser //iniciar como winuser</code>
+            <code>cd ..      //retroceder de la carpeta inicial</code>
+            <code>cd winuser //adcederemos a la carpeta del usuario</code>
+            <code>mkdir compartida //crear la nueva carpeta</code>
+            <code>chmod 777 compartida/  //Darle permisos a la carpeta</code>
 
-            <img src="../Recursos/img/Linux/entramosComoWinuser.png" alt="">
+            <img src="../Recursos/img/Linux/entramosComoWinuser.png" alt="Creacion de la carpeta compartida">
 
         </article>
 
+        <article>
+            <h2>Editar Archivo con Nano</h2>
 
+            <p>
+                Utilizaremos el editor nano que viene por defecto en linux para configurar la Carpeta 
+                compartida. Despues de ejecutar el comando, se nos abrira el archivo dentro de la terminal.
+                Bajaremos abajo al final del archivo y pulsando la tecla insert de nuestro teclado para poder
+                escribir en el archivo el siguiente contenido.
+            </p>
 
+            <code>sudo nano /etc/samba/smb.conf      //Editar archivo con Nano</code>
+            <code>[Compartida]      //contenido dentro archivo</code>
+            <code>path = /home/winuser/compartida</code>
+            <code>browseable = yes</code>
+            <code>read only = no</code>
+            <code>valid users = winuser</code>
 
+            <img src="../Recursos/img/Linux/NanoSMB.png" alt="Editar el archivo con nano">
 
+        </article>
 
+        <article>
+            <h2>Guardar SMB</h2>
 
+            <p>
+                El archivo debe quedar de la siente manera. Pulsando control + O guardaremos el archivo y 
+                pulsando control + X saldremos de la edicion del archivo.
+
+            </p>
+
+            <img src="../Recursos/img/Linux/guardarSMB.png" alt="Guadar el archivo smb">
+
+        </article>
+
+        <article>
+            <h2>Agregar winuser a Samba</h2>
+
+            <p>
+                Una vez que hayamos salido de la edicion del archivo y nos encontremos de nuevo
+                en la terminal escribiremos el siguiente comando para agregar la cuenta de winuser
+                a samba
+            </p>
+
+            <code>smbpasswd -a winuser //agregar a Samba</code>
+
+            <img src="../Recursos/img/Linux/winuserASamba.png" alt="Agregar winuser a Samba">
+
+        </article>
+
+        <article>
+            <h2>Crear archivo dentro de Compartida</h2>
+
+            <p>
+                Dentro la carpeta compartida, como winuser crearemos un archivo.
+            </p>
+
+            <code>su winuser //entrar como winuser</code>
+            <code>cd ..</code>
+            <code>cd winuser/compartida/</code>
+            <code>touch archivo-linux</code>
+            
+            <img src="../Recursos/img/Linux/CrearArchivo.png" alt="Crear archivo en compartida">
+
+        </article>
+
+        <article>
+            <h2>Resetear Samba</h2>
+
+            <p>
+                Resetearemos los servicios de Samba desde root, para asegurarnos de que todos 
+                los cambios que hemos creado se an aplicado correctamente.
+            </p>
+
+            <code>su  //entrar como root</code>
+            <code>systemctl restart smbd.service //resetear samba</code>
+            
+            
+            <img src="../Recursos/img/Linux/resetearServicio.png" alt="Resetear samba">
+
+        </article>
+
+        <article>
+            <h2>IP Linux</h2>
+
+            <p>
+                Tomaremos la segunda Ip que nos aparezca para comprobar que los sistemas se 
+                comunican entre si. En mi caso la ip es 10.0.2.15, os puede salir una diferente.
+                Es importante recordar esta ip para comprobar que hay conexion.
+            </p>
+
+            <code>ip a //Mostrar direccion ip</code>
+            
+            <img src="../Recursos/img/Linux/ip.png" alt="Direccion Ip">
+
+        </article>
+
+        <p style="text-align: center;">
+            Felicidades has finalizado el tutorial de Linux
+        </p>
     </main>
 
 

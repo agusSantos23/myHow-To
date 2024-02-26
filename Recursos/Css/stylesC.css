@@ -9,6 +9,10 @@ article{
 
 h2{
     font-size: 30px;
+    border-left: 3px solid var(--beigeA);
+    border-right: 3px solid var(--beigeA);
+    width: fit-content;
+    padding: 0 20px ;
 }
 
 p{
@@ -18,11 +22,14 @@ p{
 
 code{
     display: block;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px 0;
 }
 
 img{
 
     width: 800px;
     border-radius: 7px;
-    margin: 20px 100px 0;
+    margin: 20px 100px 50px;
 }
