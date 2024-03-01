@@ -58,6 +58,7 @@ footer{
     height: 50px;
     width: 100%;
     background-color: var(--negro);
+    color: var(--beige);
 
     display: flex;
     justify-content: center;
@@ -66,8 +67,12 @@ footer{
 
 footer>h3{
     color: var(--beige);
+    margin: 0 10vw;
 }
 
+footer>span{
+    font-size: 30px;
+}
 
 
 
