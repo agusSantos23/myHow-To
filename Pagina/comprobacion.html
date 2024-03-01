@@ -5,23 +5,32 @@
     <link rel="stylesheet" href="../Recursos/Css/header.css">
     <link rel="stylesheet" href="../Recursos/Css/stylesC.css">
 
+    <link rel="icon"  href="../Recursos/logo.ico" />   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprobacion</title>
 </head>
 <body>
     <header id="headerP">
-        
+        <!--
+            He creado un svg al ser una figura simple en vez de utilizar un .png o un .jpg, 
+            utilizo un svg para que con matematicas cree la forma deseada. Cuando se clice sobre el volvera en el historial 
+            a su posicion anterior,
+        -->
         <svg onclick="history.go(-1)" fill="#454545" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M20.697 24L9.303 16.003 20.697 8z"/></svg>
 
         <h1 id="titulo">Comprobacion</h1>
     </header>
 
+    <!--Creo un cuerpo para agregar la informacion principal-->
     <main>
 
-        <article>
-            <h2>Enviar Paquetes entre sistemas</h2>
 
+        <article>
+            <!--Creo el titulo-->
+            <h2>Enviar Paquetes entre sistemas</h2>
+            <!--El texto explicativo-->
             <p>
                 Abriremos la terminal de Windows estando dentro de la maquina virtual de Windows
                 escribiendo en el buscador terminal. Una vez abierto escribiresmos el siguiente 
@@ -29,9 +38,13 @@
                 que nos devolvio el sistema operativo de Linux. Si de los paquetes enviados no se ha
                 perdido ninguno significa que todo funciona correctamente.
             </p>
-
+            <!--Con la etiqueta code escribimos a un estado parecido y similar a codigo-->
             <code>ip 10.0.2.15</code>
 
+            <!--
+                Introduzco una imagen atra vez de una etiqueta img, en caso de que no se cargara la img
+                se cargaria la infirmacion que contiene el atributo alt
+            -->
             <img src="../Recursos/img/comprobacion/TerminalPaquetes.png" alt="Enviar Paquetes entre sistemas">
 
         </article>
@@ -62,9 +75,10 @@
 
         </article>
 
-        <p style="text-align: center;">
-            Felizidades, con esto he mos finalizado el tutorial de Compartir archivos con Samba.
-        </p>
+
+        <footer>
+            <p>Felizidades, con esto he mos finalizado el tutorial de Compartir archivos con Samba.</p> 
+        </footer>
 
 
 

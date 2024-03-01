@@ -1,3 +1,6 @@
+//cuando llame a la funcion el valor que introduzca pasara por un switch para clasificarlo 
+//se activara el diplay flex del div en cuestion
+
 function winlinVE(id){
 
     switch(id){
@@ -15,6 +18,7 @@ function winlinVE(id){
 
 }
 
+//Le dira al display de los dos elementos que sea nada
 
 function cerrarVE(){
 

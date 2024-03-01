@@ -3,7 +3,7 @@
 
 
 :root{
-    --negro: #454545;
+    --negro: #434343;
     --beige: #FCF5ED;
     --beigeA: #F4BF96;
 }
@@ -40,24 +40,33 @@ a{
     color: var(--negro);
 }
 
-h1,h3{
-    color: var(--negro);
-    
-}
-
-#presentacion{
+header{
     right: 20px;
-    bottom: 20px;
+    bottom: 73px;
     position: fixed;
-    width: 300px;
+    width: 270px;
 
 }
 
-#presentacion>h3{
-    font-size: 25px;
+header>h1{
+    font-size: 50px;
+    color: var(--negro);
+
 }
 
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: var(--negro);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>h3{
+    color: var(--beige);
+}
 
 
 
