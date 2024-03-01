@@ -80,23 +80,23 @@ main> div > img{
 }
 
 
-#cuerpo{
+.cuerpo{
     background-color: var(--beige);
-    max-width: 700px;
-    height: 600px;
+    max-width: 800px;
+    height: 700px;
     border-radius: 10px 5px 5px 10px;
     padding: 0 20px 5px;
 
     overflow: auto;
 }
 
-#cuerpo::-webkit-scrollbar{
+.cuerpo::-webkit-scrollbar{
     width: 10px;
     background-color: var(--beige);
     border-radius: 15px;
     
 }
-#cuerpo::-webkit-scrollbar-thumb{
+.cuerpo::-webkit-scrollbar-thumb{
     background-color: var(--negro);
     border-radius: 15px;
     border-right: 5px solid var(--beige);
@@ -104,20 +104,20 @@ main> div > img{
 }
 
 
-#headerVE > h2{
+.headerVE > h2{
     font-size: 30px;
 }
 
-#headerVE > svg{
+.headerVE > svg{
     transition: 0.2s linear;
     cursor: pointer;
 }
 
-#headerVE > svg:hover{
+.headerVE > svg:hover{
     transform: rotate(90deg);
 }
 
-#cuerpo>article{
+.cuerpo>article{
     margin-top: 30px;
 }
 
@@ -147,8 +147,9 @@ article> section > img{
     border-radius: 5px;
 }
 
-#cuerpo > footer{
+.cuerpo > footer{
     text-align: center;
+    font-size: 18px;
 }
 
 

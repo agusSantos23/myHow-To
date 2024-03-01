@@ -1,6 +1,12 @@
+/*
+    Estilos para cada uno de los encabezados de cada subPagina
+*/
 
-
-
+/*
+    margin top para separar el elemento a traver de un margen superior
+    display flex organiza los elementos del interior de forma grupal y 
+    con alignitems y justifycontent indico donde quiero que se agrupe
+*/
 header{
     margin-top: 15px;
     display: flex;
@@ -8,18 +14,43 @@ header{
     justify-content: left;
 }
 
-header>svg{
+/*
+    Al llamar las estiquetas de esta forma indico que solamente las etiquetas svg que estan
+    ya dentro de una etiqueta header cumplan las siguientes especificaciones
+
+    El elmento original va a rotar 180 grados y va a tener un tamaño mas grande si scale es mayor de 1 va ha aumentar 
+    su tamaño y si es inferior lo va a reducir
+    transition sirve para hacer transiciones de dos estados de un elemento en este caso le damos un tiempo de 2 ms
+    y una transicion ease ademas de que afectara a todos los elementos que se cambien del elemento
+    cursor pointer indico que cuando el raton este encima cambie de cursor
+*/
+
+header > svg{
     margin-left: 30px;
     transform: rotate(180deg) scale(1.4);
-    transition: 0.2s ease;
+    transition: .2s ease;
     cursor: pointer;
-
 }
 
-header>svg:hover{
+/*
+    Cuando se pase el raton por encima de una etiqueta svg que este dentro de una etiqueta header 
+    rotara y se escalara a un nos nuevos valores
+*/
+
+header > svg:hover{
 
     transform: rotate(0deg) scale(1.2);
 }
+
+/*
+    font-size se le cambiara el tamaño de la letra a la establecida
+    borderbottom aparecera una linea en la parte inferior del elemento de anchura 4px tipo solido y con el color que le estoy indicando
+    como en el documeto html estoy llamando primero al que tiene las variable de los colores puedo volver a llamarlo sin tener que 
+    volver a escribir las variables en la raiz
+    display inline para que que el cuerpo de la etiqueta solo sea lo que se ve
+    border radius redondea las esquinas de los elementos
+    padding agrega una separacion entre el borde y el contenido 
+*/
 
 h1{
     font-size: 40px;

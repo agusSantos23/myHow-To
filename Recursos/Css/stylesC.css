@@ -11,13 +11,12 @@ h2{
     font-size: 30px;
     border-left: 3px solid var(--beigeA);
     border-right: 3px solid var(--beigeA);
-    width: fit-content;
+    display: inline;
     padding: 0 20px ;
 }
 
 p{
     font-size: 22px;
-    
 }
 
 code{
@@ -35,7 +34,8 @@ img{
 }
 
 a{
-    color: black;
+    border-bottom: 3px solid var(--beigeA);
+    color: var(--negro);
 }
 
 footer{
